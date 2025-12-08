@@ -8,8 +8,24 @@
   </head>
 
   <body>
-    <div id="display-weather-div"></div>
-    <div id="selection-div"></div>
+    <div id="display-weather-div">
+
+    </div>
+    <div id="selection-div">
+      <form>
+        <label for="pays">Weather for :</label>
+          <select id="country" name="country" required>
+            <option value=""></option>
+            <option value="new york">New York</option>
+            <option value="los angeles">Los Angeles</option>
+            <option value="chicago">Chicago</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="london">London</option>
+          </select>
+          <button id="get-weather-btn" type="submit">Get Weather   </button>
+      </form>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>
