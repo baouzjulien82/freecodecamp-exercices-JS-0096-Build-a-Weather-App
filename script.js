@@ -6,6 +6,7 @@ const getWeatherBtn = document.getElementById("get-weather-btn");
 const locationTitle = document.getElementById("location");
 const weatherIcon = document.getElementById("weather-icon");
 const mainTemperature = document.getElementById("main-temperature");
+
 const feelsLike = document.getElementById("feels-like");
 const humidityDiv = document.getElementById("humidity");
 const windDiv = document.getElementById("wind");
