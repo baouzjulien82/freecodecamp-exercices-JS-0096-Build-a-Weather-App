@@ -31,14 +31,14 @@ async function showWeather(city) {
     if (data.error) {
     throw new Error(data.error);
     }
-    locationTitle.innerText = data.name;
-    weatherIcon.setAttribute("src", data.weather[0].icon);
-    mainTemperature.innerText = data.main.temp;
-    feelsLike.innerText = data.main.feels_like;
-    humidityDiv.innerText = data.main.humidity;
-    windDiv.innerText = data.wind.speed;
-    windGust.innerText = data.wind.gust;
-    weatherMain.innerText = data.weather[0].description; 
+    locationTitle.innerText = data.name === undefined ? "N/A" : data.name;
+    weatherIcon.setAttribute("src", data.weather[0].icon === undefined? "" : data.weather[0].icon);
+    mainTemperature.innerText = data.main.temp === undefined ? "N/A" : data.main.temp;
+    feelsLike.innerText = data.main.feels_like === undefined ? "N/A" : data.main.feels_like;
+    humidityDiv.innerText = data.main.humidity === undefined ? "N/A" : data.main.humidity;
+    windDiv.innerText = data.wind.speed === undefined ? "N/A" : data.wind.speed;
+    windGust.innerText = data.wind.gust === undefined ? "N/A" : data.wind.gust;
+    weatherMain.innerText = data.weather[0].description === undefined ? "N/A" : data.weather[0].description; 
     displayWeatherDiv.style.display = "flex";
 
   } catch (error) {
