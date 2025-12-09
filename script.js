@@ -33,8 +33,8 @@ async function showWeather(city) {
     }
     locationTitle.innerText = data.name === undefined ? "N/A" : data.name;
     weatherIcon.setAttribute("src", data.weather[0].icon === undefined? "" : data.weather[0].icon);
-    mainTemperature.innerText = data.main.temp === undefined ? "N/A" : data.main.temp;
-    feelsLike.innerText = data.main.feels_like === undefined ? "N/A" : data.main.feels_like;
+    mainTemperature.innerHTML = data.main.temp === undefined ? "N/A" : `<span>t°c: ${data.main.temp}</span>`;
+    feelsLike.innerHTML = data.main.feels_like === undefined ? "N/A" : `<span>t°c feels like: ${data.main.feels_like}</span>`;
     humidityDiv.innerText = data.main.humidity === undefined ? "N/A" : data.main.humidity;
     windDiv.innerText = data.wind.speed === undefined ? "N/A" : data.wind.speed;
     windGust.innerText = data.wind.gust === undefined ? "N/A" : data.wind.gust;
