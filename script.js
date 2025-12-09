@@ -25,9 +25,16 @@ async function getWeather(city) {
 
 async function showWeather(city) {
   try {
-
-
+      const data = getWeather(city);
+      console.log(data);
+      
   } catch (error) {
     alert("Something went wrong, please try again later")
   }
 }
+
+getWeatherBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const city = selectedCity.value;
+      showWeather(city);
+})
