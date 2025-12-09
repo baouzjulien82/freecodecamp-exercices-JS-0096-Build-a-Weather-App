@@ -2,9 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #333;
+  background-color: #f0f8ff;
 }
 
 #display-weather-div {
   display: none;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+#city-div{
+  width: 100%;
+  margin: 10px auto 20px;
+  text-align: center;
+}
+
+#selection-div {
+  width: 300px;
+  margin: 20px auto 10px;
 }
 
