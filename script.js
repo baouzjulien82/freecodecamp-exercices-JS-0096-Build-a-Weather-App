@@ -25,8 +25,12 @@ async function getWeather(city) {
 
 async function showWeather(city) {
   try {
-      const data = await getWeather(city);
-      console.log(data);
+    const data = await getWeather(city);
+    console.log(data);
+    if (data.error) {
+    throw new Error(data.error);
+    }
+    
 
   } catch (error) {
     alert("Something went wrong, please try again later")
