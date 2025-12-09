@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -16,18 +16,52 @@ body {
 #display-weather-div {
   display: none;
   flex-direction: column;
-  width: 300px;
+  width: 320px;
   margin: auto;
 }
 
 #city-div{
   width: 100%;
   margin: 10px auto 20px;
+  padding: 4px 6px;
   text-align: center;
+  background-color: #98c9f4;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+#meteoData-div {
+  background-color: #98c9f4;
+  border-radius: 5px;
+  padding: 4px 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#meteoData-div span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 4px 0;
+}
+
 
 #selection-div {
-  width: 300px;
+  width: 320px;
   margin: 20px auto 10px;
+  padding: 4px 6px;
+  background-color: #98c9f4;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+#get-weather-btn {
+  border-radius: 50px;
+  padding: 2px 4px;
+  margin: 3px;
+  transition: background-color 0.3s ease;
+  border: 1px solid grey;
+}
+
+#get-weather-btn:hover {
+  background-color: #d7d7d7;
+}
